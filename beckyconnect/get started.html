@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - Becky Connect</title>
+    <style>
+         :root {
+            --accent: #d84dbe;
+            --accent-2: #b23792;
+            --muted: #5e3f73
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4f2e68, #5f3b79);
+            color: #fff
+        }
+        
+        .page {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 24px
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px
+        }
+        
+        .brand {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em
+        }
+        
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+        
+        nav a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.06)
+        }
+        
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            background: #fff;
+            border-radius: 28px;
+            color: #3d1741;
+            padding: 26px;
+            align-items: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(1.8rem, 4.2vw, 3.2rem);
+            margin-bottom: 12px;
+            line-height: 1.02;
+        }
+        
+        .hero p {
+            color: var(--muted)
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 18px;
+            object-fit: cover
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin-top: 20px
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.96);
+            padding: 18px;
+            border-radius: 12px;
+            color: #3b2341
+        }
+        
+        .cta-panel {
+            margin-top: 20px;
+            padding: 18px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(216, 77, 190, 0.12), rgba(207, 110, 214, 0.18));
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+        
+        .cta-panel a {
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 12px;
+            text-decoration: none
+        }
+        
+        footer {
+            margin-top: 28px;
+            text-align: center;
+            padding: 18px;
+            background: linear-gradient(135deg, #6A3D8A, #4A2C5A);
+            border-radius: 12px;
+            color: #fff
+        }
+        
+        @media(max-width:940px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .features {
+                grid-template-columns: 1fr
+            }
+        }
+        
+        @media(max-width:768px) {
+            nav {
+                justify-content: center
+            }
+            .hero {
+                padding: 16px;
+                gap: 12px;
+                grid-template-columns: 1fr;
+            }
+            .hero-image {
+                max-width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="brand">Becky Connect</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a class="active" href="get started.html">Get Started</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div>
+                <h1>Get started with your creative project today.</h1>
+                <p>Begin your journey with a simple process that brings clarity, color, and thoughtful design to your next website or brand refresh.</p>
+            </div>
+            <div>
+                <img src="image/reb.jpg" alt="Get started" class="hero-image">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Personalized process</h3>
+                <p>Your project receives tailored attention and a clear workflow so you always know the next step.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fast, friendly support</h3>
+                <p>Communication stays simple and responsive from kickoff through launch and beyond.</p>
+            </div>
+        </section>
+
+        <section class="cta-panel">
+            <div>
+                <h2 style="color:white">Ready to start?</h2>
+                <p style="color:white">Let’s turn your idea into a website with creative energy, elegant styling, and thoughtful execution.</p>
+            </div>
+            <a href="contact.html">Get started</a>
+        </section>
+
+        <footer>
+            <p>Built by: Rebecca Adewunmi | August 2026 | Version 1.0</p>
+            <p>&copy; 2026 Becky Connect. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
